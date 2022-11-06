@@ -59,7 +59,7 @@ public class Dos implements Runnable {
 
         String[] SUrl = url.split("://");
 
-        System.out.println("Checking connection to Site");
+        System.out.println("Check Proxy ?");
         if (SUrl[0] == "http" || SUrl[0].equals("http")) {
             dos.checkConnection(url);
         } else {
@@ -68,7 +68,7 @@ public class Dos implements Runnable {
 
         System.out.println("Setting DDoS By: NXT_DEV");
 
-        System.out.print("Thread: ");
+        System.out.print("BOT: ");
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
@@ -77,7 +77,7 @@ public class Dos implements Runnable {
             Dos.amount = Integer.parseInt(amount);
         }
 
-        System.out.print("method: ");
+        System.out.print("Methods: ");
         String option = in.nextLine();
         int ioption = 1;
         if (option == "get" || option == "GET") {
